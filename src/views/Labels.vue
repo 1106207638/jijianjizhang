@@ -1,7 +1,8 @@
 <template>
   <div>
-    labels.vue
-    <Nav />
+    <Layout>
+      labels.vue
+    </Layout>
   </div>
 </template>
 
