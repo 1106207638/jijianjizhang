@@ -1,6 +1,6 @@
 <template>
   <Layout class-prefix="layout">
-    {{ record }}
+    {{ recordList }}
     <NumberPad :value.sync="record.amount" @submit="saveRecord" />
     <Types :value.sync="record.type" />
     <Notes @update:value="onUpdateNotes" />
@@ -21,12 +21,15 @@ type Record = {
   notes: string;
   type: string;
   amount: number;
+  createAt?: Date;
 };
 
 @Component({ components: { Tags, Notes, Types, NumberPad } })
 export default class Tages extends Vue {
   tags = ["衣", "食", "住", "行"];
-  recordList: Record[] = [];
+  recordList: Record[] = JSON.parse(
+    window.localStorage.getItem("recordList") || "[]"
+  );
   record: Record = {
     tags: [],
     notes: "",
@@ -41,9 +44,9 @@ export default class Tages extends Vue {
     this.record.notes = value;
   }
   saveRecord() {
-    const record2 = JSON.parse(JSON.stringify(this.record));
+    const record2: Record = JSON.parse(JSON.stringify(this.record));
+    record2.createAt = new Date();
     this.recordList.push(record2);
-    console.log(this.recordList);
   }
   @Watch("recordList")
   onRecordListChange() {
