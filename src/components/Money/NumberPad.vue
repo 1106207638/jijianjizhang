@@ -22,11 +22,13 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import { Component, Prop } from "vue-property-decorator";
 
 @Component
 export default class Number extends Vue {
-  output = "0";
+  @Prop() readonly value!: number;
+  output = this.value.toString();
+
   inputConntent(event: MouseEvent) {
     const button = event.target as HTMLButtonElement;
     const input = button.textContent as string;
@@ -59,7 +61,7 @@ export default class Number extends Vue {
     this.output = "0";
   }
   ok() {
-    return;
+    this.$emit("update:value", this.output);
   }
 }
 </script>
