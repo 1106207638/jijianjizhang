@@ -11,8 +11,6 @@
         @click="toggle(tag)"
       >
         {{ tag.name }}
-        >
-        {{ tag }}
       </li>
     </ul>
   </div>
