@@ -1,0 +1,191 @@
+[33mcommit aa77b525b2c5441b711867d3720ca4144bbd87a0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 17:55:35 2020 +0800
+
+    将所有数据操作封装在 store 里
+
+[33mcommit cf71ed7736f831a5733e0477df76951727d09c1b[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 17:19:14 2020 +0800
+
+    封装 redord  的操作
+
+[33mcommit bb4c323e68f99a8606e86fb70c4f0ac7e8935827[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 10:54:01 2020 +0800
+
+    封装了 window.createTag
+
+[33mcommit 7c51612f6a402c81685d68ec94e57013ae699b85[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 10:22:55 2020 +0800
+
+    使用全局 tagList
+
+[33mcommit 2316fb5bd7bc52cc39267243e1bac45a2d56418a[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 09:32:34 2020 +0800
+
+    将 create 封装到 model
+
+[33mcommit 0e16fe0e9ec37d30e3bbbe9f33e1792b53f7bdef[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 23 09:22:06 2020 +0800
+
+    重新封装recordListModel
+
+[33mcommit e2dcd24965f23cf16979836acbbdf93297376c23[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 18:28:41 2020 +0800
+
+    解决 id 生成问题
+
+[33mcommit 1a12287182a1dcc255f655c05d9801bac76f4b39[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 17:07:38 2020 +0800
+
+    实现了标签的编辑和删除功能
+
+[33mcommit 24d0c98efa23c2e4417d973f77fa7574e3399bde[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 15:02:17 2020 +0800
+
+    展示 tag 的 name
+
+[33mcommit 0f4618fae32ad68af3fcbfa499c59467c732d85e[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 14:49:01 2020 +0800
+
+    修复 value 被赋值的问题
+
+[33mcommit 2a5047a896440a2c51dd5b5141d2c676709f2e53[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 02:08:22 2020 +0800
+
+    添加了 EditLabel.VUE 的css，以及抽离两个组件 Button 和 FormItem
+
+[33mcommit 47f70e627224b26eb5e9dc73f0675dbb5dfce481[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 22 01:31:36 2020 +0800
+
+    改造 Notes.vue 使其成为通用组件
+
+[33mcommit b529b02a126a7f373d7b30a08e6f9c560e5b158a[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Mon Dec 21 17:45:42 2020 +0800
+
+    点击标签可以跳转到该页面
+
+[33mcommit 2a7a869633fbfbb177061eb7865da7468f6c9ad1[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Mon Dec 21 17:27:48 2020 +0800
+
+    新增 EditLabel 组件
+
+[33mcommit 924d5cd385327a411335b37d984c8d04dd7d2813[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Mon Dec 21 16:44:57 2020 +0800
+
+    将 tag 的 string 改为 {id，name}
+
+[33mcommit a02500af0abd5cf2605a305bbdf90edcba2d2359[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Sun Dec 20 21:50:12 2020 +0800
+
+    标签可以展示和创建了
+
+[33mcommit a1ace9f29aad5db79a5302aeb05411a1ee613498[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Fri Dec 18 16:28:23 2020 +0800
+
+    添加 createAt
+
+[33mcommit 561a7750f28c5f8110c0f0b48ee10dc4180c22a3[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Fri Dec 18 15:52:37 2020 +0800
+
+    把 record 的复制保存至 list
+
+[33mcommit c8bae13f34002f7b2e8754db8ab355ab01ae56bd[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Fri Dec 18 15:00:03 2020 +0800
+
+    收集四个组件的数据到record
+
+[33mcommit b78e41cb749c7f5860a895b002f76800f0771973[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Thu Dec 17 00:32:14 2020 +0800
+
+    可以选中或取消tag
+
+[33mcommit 5cf9b2afef29b13ca81a4a2f0b1fd6e533af0656[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 16 19:23:28 2020 +0800
+
+    完成notes组件
+
+[33mcommit 9c5cd4f7d0bb38be695509668074bdafd2c0a8bf[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 16 19:04:18 2020 +0800
+
+    做好了所有按钮的功能（除却ok按钮）
+
+[33mcommit 01aff8bc2995f0236ad4c7ad9eed1f6cb5202c8f[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 16 16:39:24 2020 +0800
+
+    完成 Types 组件
+
+[33mcommit ee3bc98f2ede497ea1ee202c5c226104c17404fb[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 15 20:53:49 2020 +0800
+
+    使用props失败
+
+[33mcommit 44a4ebfe0a5715e0034189c0657873268386e7ac[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Mon Dec 14 11:23:04 2020 +0800
+
+    添加全局样式和变量
+
+[33mcommit ce656842c1e8ef391cb5a03211860558870e7ed0[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Fri Dec 11 16:02:44 2020 +0800
+
+    写完了CSS样式
+
+[33mcommit be36917a4d9d0095dadc58220e633f87aff8818c[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Fri Dec 11 15:11:23 2020 +0800
+
+    备注
+
+[33mcommit 755434ab930781566a4ba0926f6998bdc4ab0a1c[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 9 23:12:22 2020 +0800
+
+    使用slot将导航栏代码优化
+
+[33mcommit 6f2a1e0d64b65aaa7613476cbe068991b3bc206f[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 9 17:39:57 2020 +0800
+
+    导航栏现在显示到页面底部
+
+[33mcommit aa4478e700822c2ae48c54c52df64e876c8f0e29[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 9 16:27:44 2020 +0800
+
+    创建了404页面与将Nav组件做成全局组件
+
+[33mcommit d902ff19ca31a922d54a7ccd324131cc9947f2c4[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Wed Dec 9 15:07:54 2020 +0800
+
+    创建三个页面和路由路径
+
+[33mcommit 86bfa30f5eea99615fc9dcf3a313a847e770f702[m
+Author: 1106207638 <1106207638@qq.com>
+Date:   Tue Dec 8 20:19:32 2020 +0800
+
+    init
