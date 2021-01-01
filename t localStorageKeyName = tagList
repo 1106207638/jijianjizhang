@@ -98,7 +98,7 @@ Date:   Sun Dec 20 21:50:12 2020 +0800
 Author: 1106207638 <1106207638@qq.com>
 Date:   Fri Dec 18 16:28:23 2020 +0800
 
-    添加 createAt
+    添加 createdAt
 
 [33mcommit 561a7750f28c5f8110c0f0b48ee10dc4180c22a3[m
 Author: 1106207638 <1106207638@qq.com>
