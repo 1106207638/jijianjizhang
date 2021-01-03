@@ -6,10 +6,11 @@
       <FormItem
         field-name="备注"
         placeholder="在这里输入备注"
+        :value="record.notes"
         @update:value="onUpdateNotes"
       />
     </div>
-    <Tags />
+    <Tags @update:value="record.tags = $event" />
   </Layout>
 </template>
 
@@ -42,7 +43,14 @@ export default class Money extends Vue {
     this.record.notes = value;
   }
   saveRecord() {
+    if (!this.record.tags || this.record.tags.length === 0) {
+      return window.alert("请选择至少一个标签");
+    }
     this.$store.commit("createRecord", this.record);
+    if (this.$store.state.createRecordError === null) {
+      window.alert("记账成功");
+      this.record.notes = "";
+    }
   }
 }
 </script>
