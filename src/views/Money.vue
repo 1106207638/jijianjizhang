@@ -1,7 +1,7 @@
 <template>
   <Layout class-prefix="layout">
     <NumberPad :value.sync="record.amount" @submit="saveRecord" />
-    <Tabs :data-source="recordTypeList" :value.sync="record.type" />
+    <Tabs :data-source="recordTypeList" :value.sync="record.type" class="qqq" />
     <div class="notes">
       <FormItem
         field-name="备注"
@@ -50,6 +50,7 @@ export default class Money extends Vue {
     if (this.$store.state.createRecordError === null) {
       window.alert("记账成功");
       this.record.notes = "";
+      this.$router.push({ path: "/statistics" });
     }
   }
 }
@@ -59,5 +60,9 @@ export default class Money extends Vue {
 ::v-deep .layout-content {
   display: flex;
   flex-direction: column-reverse;
+}
+.qqq {
+  background: white;
+  color: #0a0a0a;
 }
 </style>

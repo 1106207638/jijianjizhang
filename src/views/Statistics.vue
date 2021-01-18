@@ -20,6 +20,9 @@
       </li>
     </ol>
     <div class="null" v-else>当前没有记录</div>
+    <router-link to="/money" class="item" active-class="selected">
+      <Icon name="money" />
+    </router-link>
   </Layout>
 </template>
 
@@ -101,12 +104,11 @@ export default class Statistics extends Vue {
 <style scoped lang="scss">
 ::v-deep {
   .type-tabs-item {
-    background: #0a0a0a;
-    color: white;
-
+    background: white;
+    color: #0a0a0a;
     &.selected {
-      background: white;
-      color: black;
+      background: #0a0a0a;
+      color: white;
 
       &::after {
         display: none;
@@ -144,5 +146,16 @@ export default class Statistics extends Vue {
 .qwe {
   max-height: calc(100vh - 49.6px - 64px);
   overflow: auto;
+}
+.item {
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  .icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+  }
 }
 </style>
