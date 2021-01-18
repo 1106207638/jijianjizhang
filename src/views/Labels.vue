@@ -41,6 +41,8 @@ export default class Labels extends mixins(TagHelper) {
 
 <style lang="scss" scoped>
 .tags {
+  max-height: calc(100vh - 49.6px);
+  overflow: auto;
   background: white;
   font-size: 16px;
   padding-left: 16px;

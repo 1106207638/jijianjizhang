@@ -5,7 +5,7 @@
       :data-source="recordTypeList"
       :value.sync="type"
     />
-    <ol v-if="groupedList.length > 0">
+    <ol v-if="groupedList.length > 0" class="qwe">
       <li v-for="(group, index) in groupedList" :key="index">
         <h3 class="title">
           {{ beautify(group.title) }}<span>￥{{ group.total }}</span>
@@ -101,10 +101,12 @@ export default class Statistics extends Vue {
 <style scoped lang="scss">
 ::v-deep {
   .type-tabs-item {
-    background: #c4c4c4;
+    background: #0a0a0a;
+    color: white;
 
     &.selected {
       background: white;
+      color: black;
 
       &::after {
         display: none;
@@ -138,5 +140,9 @@ export default class Statistics extends Vue {
 .null {
   text-align: center;
   padding: 30px;
+}
+.qwe {
+  max-height: calc(100vh - 49.6px - 64px);
+  overflow: auto;
 }
 </style>
