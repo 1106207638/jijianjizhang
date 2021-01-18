@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="asd">
     <Tabs
       class-prefix="type"
       :data-source="recordTypeList"
@@ -147,10 +147,13 @@ export default class Statistics extends Vue {
   max-height: calc(100vh - 49.6px - 64px);
   overflow: auto;
 }
+.asd {
+  position: relative;
+}
 .item {
-  position: fixed;
-  right: 10px;
-  bottom: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20vh;
   .icon {
     width: 60px;
     height: 60px;
